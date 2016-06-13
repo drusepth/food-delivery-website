@@ -11,7 +11,45 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160613202119) do
+ActiveRecord::Schema.define(version: 20160613205904) do
+
+  create_table "menu_categories", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "menus", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.time     "enable_at"
+    t.time     "disable_at"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.datetime "submitted"
+    t.datetime "scheduled_delivery"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  create_table "product_addons", force: :cascade do |t|
+    t.string   "name"
+    t.decimal  "price_delta"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.decimal  "price"
+    t.float    "people_fed"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
@@ -36,5 +74,24 @@ ActiveRecord::Schema.define(version: 20160613202119) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "vendors", force: :cascade do |t|
+    t.string   "name"
+    t.time     "open_at"
+    t.time     "close_at"
+    t.time     "delivery_start"
+    t.time     "delivery_end"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zipcode"
+    t.decimal  "delivery_cost"
+    t.decimal  "delivery_minimum"
+    t.string   "cuisine"
+    t.string   "price_range"
+    t.string   "image_url"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
 end
