@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require fuelux
 //= require bootstrap-notify
+//= require bootstrap-timepicker
 //= require_tree .
