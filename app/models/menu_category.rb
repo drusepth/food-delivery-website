@@ -4,4 +4,7 @@ class MenuCategory < ActiveRecord::Base
 	delegate :vendor, to: :menu
 
 	has_many :products
+
+	validates :name, presence: true
+	validates :menu, presence: true
 end

@@ -5,4 +5,8 @@ class Product < ActiveRecord::Base
 	delegate :menu,   to: :menu_category
 
 	has_many :product_addons
+
+	validates :name,       presence: true
+	validates :price,      presence: true
+	validates :people_fed, presence: true
 end
