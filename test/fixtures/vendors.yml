@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  open_at: 2016-06-13 15:54:15
+  close_at: 2016-06-13 15:54:15
+  delivery_start: 2016-06-13 15:54:15
+  delivery_end: 2016-06-13 15:54:15
+  address: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  delivery_cost: 9.99
+  delivery_minimum: 9.99
+  cuisine: MyString
+  price_range: MyString
+  image_url: MyString
+
+two:
+  name: MyString
+  open_at: 2016-06-13 15:54:15
+  close_at: 2016-06-13 15:54:15
+  delivery_start: 2016-06-13 15:54:15
+  delivery_end: 2016-06-13 15:54:15
+  address: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  delivery_cost: 9.99
+  delivery_minimum: 9.99
+  cuisine: MyString
+  price_range: MyString
+  image_url: MyString
