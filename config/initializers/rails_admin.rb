@@ -8,31 +8,6 @@ RailsAdmin.config do |config|
 
   # Pretty-fy data
   RailsAdmin.config do |config|
-    config.model Vendor do
-      label 'Restaurant'
-      label_plural 'Restaurants'
-    end
-
-    config.model Product do
-      label 'Food Item'
-      label_plural 'Food Items'
-    end
-
-    config.model ProductAddon do
-      label 'Food Add-on'
-      label_plural 'Food Add-ons'
-    end
-
-    config.model Order do
-      label 'User Order'
-      label_plural 'User Orders'
-    end
-
-    config.model MenuCategory do
-      label 'Menu Category'
-      label_plural 'Menu Categories'
-    end
-
     config.navigation_static_links = {
       'Google' => 'http://www.google.com'
     }

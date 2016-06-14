@@ -20,4 +20,20 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    models:
+      vendor:
+        one: Restaurant
+        other: Restaurants
+      product:
+        one: Food Item
+        other: Food Items
+      product_addon:
+        one: Food Customization
+        other: Food Customizations
+      order:
+        one: User Order
+        other: User Orders
+      menu_category:
+        one: Menu Category
+        other: Menu Categories
