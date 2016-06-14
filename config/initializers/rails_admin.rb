@@ -1,24 +1,44 @@
 RailsAdmin.config do |config|
+  # Devise authentication
+  # TODO: only admins (is_admin?)
+  config.authenticate_with do
+    warden.authenticate! scope: :user
+  end
+  config.current_user_method(&:current_user)
 
-  ### Popular gems integration
+  # Pretty-fy data
+  RailsAdmin.config do |config|
+    config.model Vendor do
+      label 'Restaurant'
+      label_plural 'Restaurants'
+    end
 
-  ## == Devise ==
-  # config.authenticate_with do
-  #   warden.authenticate! scope: :user
-  # end
-  # config.current_user_method(&:current_user)
+    config.model Product do
+      label 'Food Item'
+      label_plural 'Food Items'
+    end
 
-  ## == Cancan ==
-  # config.authorize_with :cancan
+    config.model ProductAddon do
+      label 'Food Add-on'
+      label_plural 'Food Add-ons'
+    end
 
-  ## == Pundit ==
-  # config.authorize_with :pundit
+    config.model Order do
+      label 'User Order'
+      label_plural 'User Orders'
+    end
 
-  ## == PaperTrail ==
-  # config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
+    config.model MenuCategory do
+      label 'Menu Category'
+      label_plural 'Menu Categories'
+    end
 
-  ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
+    config.navigation_static_links = {
+      'Google' => 'http://www.google.com'
+    }
+  end
 
+  # Admin actions
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
