@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  devise_for :users
+	# Routed routes
 
-  root to: 'static#landing'
+	# Engines
+	mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+	devise_for :users
+
+	resources :vendors
+
+	root to: 'static#landing'
 end

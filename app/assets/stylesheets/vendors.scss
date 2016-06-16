@@ -1,0 +1,21 @@
+.vendor-card {
+	margin-bottom: 40px;
+
+	.vendor-image {
+		img {
+			width: 100%;
+		}
+	}
+
+	.vendor-info {
+		.price-rating {
+			float: right;
+			color: #aaaaaa;
+			font-size: 16px;
+
+			span {
+				color: black;
+			}
+		}
+	}
+}

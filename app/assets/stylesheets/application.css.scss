@@ -11,8 +11,15 @@
  * file per style scope.
  */
 
+/* Libraries */
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "fuelux";
 @import "animate";
 @import "bootstrap-timepicker";
+
+/* Pages and themes */
+@import "static";
+@import "vendors";
+
+body { padding-top: 50px; }

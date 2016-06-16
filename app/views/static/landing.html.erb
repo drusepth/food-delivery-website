@@ -1,2 +1,30 @@
-<h1>Static#landing</h1>
-<p>Find me in app/views/static/landing.html.erb</p>
+<div class="hero">
+	<div class="background-image"></div>
+	<p class="title">
+		Food delivered to your door
+	</p>
+	<%= form_tag('/vendors') do -%>
+		<label for="zip">Enter your address to get started.</label><br />
+		<%= text_field_tag 'zip', nil, placeholder: 'Postal Code', maxlength: 5 %>
+		<input type="submit" class="btn btn-primary" value="Find food" />
+	<% end -%>
+</div>
+
+<div class="container">
+    <div class="row">
+	    <div class="col-sm-12 col-md-4 stat-hero">
+	    	<h1><%= 42 %></h1>
+	    	<p>restaurants</p>
+	    </div>
+	    <div class="col-sm-12 col-md-4 stat-hero">
+	    	<h1><%= 42 %></h1>
+	    	<p>cuisines</p>
+	    </div>
+	    <div class="col-sm-12 col-md-4 stat-hero">
+	    	<h1><%= '29 minutes' %></h1>
+	    	<p>average delivery time</p>
+	    </div>
+    </div>
+</div>
+
+<%# Vendor-location card partial %>

@@ -4,6 +4,6 @@
 	devise :database_authenticatable, :registerable,
 		:recoverable, :rememberable, :trackable, :validatable
 
-	validates :name, presence: true
+	# validates :name, presence: tru
 	# TODO: other validations here (location concern)
 end

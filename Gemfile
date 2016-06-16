@@ -13,7 +13,6 @@ gem 'fuelux-rails-sass'           # TODO: http://getfuelux.com/javascript.html
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap-growl-rails'
 gem 'bootstrap-timepicker-rails'
-
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc

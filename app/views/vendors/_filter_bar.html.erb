@@ -1,0 +1,7 @@
+Filter bar
+
+<% form_tag('/vendors') do -%>
+	<label for="zip">Enter your address to get started.</label><br />
+	<%= text_field_tag 'zip', nil, placeholder: 'Postal Code', maxlength: 5 %>
+	<input type="submit" class="btn btn-primary" value="Find food" />
+<% end -%>
