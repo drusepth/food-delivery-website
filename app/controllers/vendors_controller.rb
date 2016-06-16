@@ -1,5 +1,6 @@
 class VendorsController < ApplicationController
-  def list
+  def index
+  	@vendors = Vendor.all
   end
 
   def show

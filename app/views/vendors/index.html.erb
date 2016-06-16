@@ -19,9 +19,9 @@
         </div>
     </div>
     <div class="row">
-        <% 1.upto(9) do |i| %>
+        <% @vendors.each do |vendor| %>
             <div class="col-sm-6 col-md-4 col-lg-3">
-                <%= render partial: 'vendors/card' %>
+                <%= render partial: 'vendors/card', locals: { vendor: vendor } %>
             </div>
         <% end %>
     </div>

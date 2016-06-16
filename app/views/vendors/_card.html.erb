@@ -1,10 +1,13 @@
 <div class="vendor-card">
 <div class="vendor-image">
-    <%= image_tag 'food-placeholder.jpg' %>
+    <a href="#">
+        <%= image_tag 'food-placeholder.jpg' %>
+    </a>
 </div>
 <div class="vendor-info">
     <div class="price-rating"><span>$$</span>$$$</div>
-    <h4><a href="#">Amsterdam Cafe</a>
+    <h4>
+        <a href="#"><%= vendor.name %></a>
     </h4>
     <p>
         Restaurant description here.
