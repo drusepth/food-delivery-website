@@ -1,16 +1,16 @@
 <div class="vendor-card">
-<div class="vendor-image">
-    <a href="#">
-        <%= image_tag 'food-placeholder.jpg' %>
-    </a>
-</div>
-<div class="vendor-info">
-    <div class="price-rating"><span>$$</span>$$$</div>
-    <h4>
-        <a href="#"><%= vendor.name %></a>
-    </h4>
-    <p>
-        Restaurant description here.
-    </p>
-</div>
+    <div class="vendor-image">
+        <%= link_to vendor do %>
+            <%= image_tag (vendor.image_url.present? || 'food-placeholder.jpg') %>
+        <% end %>
+    </div>
+    <div class="vendor-info">
+        <div class="price-rating"><span>$$</span>$$$</div>
+        <h4>
+            <%= link_to vendor.name, vendor %>
+        </h4>
+        <p>
+            <%= 'vendor.description' %>
+        </p>
+    </div>
 </div>

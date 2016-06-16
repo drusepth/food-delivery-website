@@ -1,7 +1,7 @@
 <div class="mini-hero">
     <div class="background-image"></div>
     <p class="title">
-        Delicious restaurants near you
+        Delicious restaurants near <%= 'your  location' %>
     </p>
     <%= render 'vendors/filter_bar' %>
 </div>
@@ -11,7 +11,7 @@
         <div class="col-md-12">
             <ul class="nav nav-pills">
               <li role="presentation" class="active"><a href="#">All Cuisines</a></li>
-              <% %w(Chinese Pizza Thai Mexican Indian Sushi American Burgers Italian).each do |cuisine| %>
+              <% @vendors.map(&:cuisine).uniq.reject(&:empty?).sort.each do |cuisine| %>
                 <li><a href="#"><%= cuisine %></a></li>
               <% end %>
             </ul>
