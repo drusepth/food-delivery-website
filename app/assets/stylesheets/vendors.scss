@@ -19,3 +19,18 @@
 		}
 	}
 }
+
+.vendor-bar {
+	margin-bottom: 30px;
+
+	div p.meta {
+		text-transform: uppercase;
+		color: #666666;
+
+		font-size: 16px;
+	}
+
+	div p.data {
+		font-size: 14px;
+	}
+}

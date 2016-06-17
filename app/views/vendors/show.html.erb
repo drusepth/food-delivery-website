@@ -1,2 +1,77 @@
-<h1>Vendors#show</h1>
-<p>Find me in app/views/vendors/show.html.erb</p>
+<div class="mini-hero">
+    <div class="background-image"></div>
+    <p class="title">
+        <%= @vendor.name %>
+    </p>
+</div>
+
+<div class="container">
+    <div class="row vendor-bar">
+        <div class="col-sm-2">
+            <p class="meta">
+                Cuisine
+            </p>
+            <p class="data">
+                Vietnamese
+            </p>
+        </div>
+        <div class="col-sm-2">
+            <p class="meta">
+                Hours
+            </p>
+            <p class="data">
+                3am-5pm
+            </p>
+        </div>
+        <div class="col-sm-2">
+            <p class="meta">
+                Distance
+            </p>
+            <p class="data">
+                3.6mi
+            </p>
+        </div>
+        <div class="col-sm-2">
+            <p class="meta">
+                Address
+            </p>
+            <p class="data">
+                1234 Happy St.
+            </p>
+        </div>
+        <div class="col-sm-2">
+            <p class="meta">
+                Phone
+            </p>
+            <p class="data">
+                123-456-7890
+            </p>
+        </div>
+        <div class="col-sm-2">
+            <p class="meta">
+                Something
+            </p>
+            <p class="data">
+                Something
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="menu">
+            <div class="col-sm-12 col-md-4 col-lg-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="dropdown-header">MENU SECTIONS</li>
+                    <li role="presentation" class="active"><a href="#">Breakfast</a></li>
+                    <li role="presentation"><a href="#">Brunch</a></li>
+                    <li role="presentation"><a href="#">Lunch</a></li>
+                    <li role="presentation"><a href="#">Dinner</a></li>
+                    <li role="presentation"><a href="#">Dessert</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-8 col-lg-9">
+                Menu
+            </div>
+        </div>
+    </div>
+</div>

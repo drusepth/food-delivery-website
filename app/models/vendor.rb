@@ -1,5 +1,5 @@
 class Vendor < ActiveRecord::Base
-	has_many :menus
+	has_one :menu
 	has_many :products, through: :menus
 
 	validates :name, presence: true
