@@ -1,0 +1,46 @@
+.cart {
+	position: fixed;
+	width: inherit;
+
+	background: #efefef;
+	padding: 20px 10px;
+
+	.items {
+		list-style-type: none;
+		padding: 0;
+
+		li {
+			border-bottom: 1px solid #ccc;
+			padding: 5px;
+
+			.price {
+				float: right;
+			}
+
+			.name {
+				font-weight: bold;
+			}
+
+			.quantity {
+				color: #999999;
+				padding-left: 4px;
+			}
+		}
+	}
+
+	.summary {
+		float: right;
+
+		.tax {
+
+		}
+
+		.total {
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+
+	.actions {
+	}
+}

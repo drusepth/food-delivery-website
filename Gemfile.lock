@@ -72,6 +72,10 @@ GEM
     fuelux-rails-sass (3.14.2)
       railties (>= 3.1)
       sass-rails
+    geokit (1.10.0)
+    geokit-rails (2.1.0)
+      geokit (~> 1.5)
+      rails (>= 3.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     haml (4.0.7)
@@ -210,6 +214,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   fuelux-rails-sass
+  geokit-rails
   jbuilder (~> 2.0)
   jquery-rails
   pg

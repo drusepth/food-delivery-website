@@ -21,5 +21,7 @@
 /* Pages and themes */
 @import "static";
 @import "vendors";
+@import "menu";
+@import "payments";
 
 body { padding-top: 50px; }

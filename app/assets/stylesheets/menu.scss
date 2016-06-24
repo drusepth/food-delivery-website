@@ -1,0 +1,48 @@
+.menu {
+	.menu-sections {
+		position: fixed;
+	}
+
+	.menu-contents {
+		font-size: 20px;
+
+		h1 {
+			color: #337AB7;
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+
+		.menu-item {
+			padding: 20px 0;
+			cursor: pointer;
+
+			&:hover {
+				background: #F5F7F9;
+
+				.item-price .add-icon {
+					visibility: visible;
+				}
+			}
+
+			.item-description {
+				.description {
+					font-size: 16px;
+					color: #666688;
+				}
+			}
+
+			.item-price {
+				text-align: right;
+				float: right;
+
+				.add-icon {
+					color: #337AB7;
+					margin-left: 5px;
+
+					visibility: hidden;
+				}
+			}
+		}
+	}
+
+}

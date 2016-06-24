@@ -3,9 +3,9 @@
 	<p class="title">
 		Food delivered to your door
 	</p>
-	<%= form_tag('/vendors') do -%>
+	<%= form_tag('/vendors', method: :get) do -%>
 		<label for="zip">Enter your address to get started.</label><br />
-		<%= text_field_tag 'zip', nil, placeholder: 'Postal Code', maxlength: 5 %>
+		<%= text_field_tag 'zip', nil, placeholder: 'Postal Code', maxlength: 7 %>
 		<input type="submit" class="btn btn-primary" value="Find food" />
 	<% end -%>
 </div>
