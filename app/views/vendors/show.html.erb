@@ -71,19 +71,9 @@
 
             <div class="col-sm-12 col-md-6 col-lg-8">
                 <div class="menu-contents">
-                    <h1 id="breakfast">Breakfast</h1>
-                    <% 1.upto(8) do |x| %>
-                        <%= render partial: 'vendors/menu_item', locals: { item: nil } %>
-                    <% end %>
-
-                    <h1 id="brunch">Brunch</h1>
-                    <% 1.upto(6) do |x| %>
-                        <%= render partial: 'vendors/menu_item', locals: { item: nil } %>
-                    <% end %>
-
-                    <h1 id="brunch">Lunch</h1>
-                    <% 1.upto(15) do |x| %>
-                        <%= render partial: 'vendors/menu_item', locals: { item: nil } %>
+                    <h1 id="breakfast">Menu</h1>
+                    <% @menu.products.each do |product| %>
+                        <%= render partial: 'vendors/menu_item', locals: { item: product } %>
                     <% end %>
                 </div>
             </div>

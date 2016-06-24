@@ -1,10 +1,10 @@
 <div class="row menu-item">
     <div class="col-sm-3 col-md-4 col-lg-2 item-price">
-        $4.99
+        <%= number_to_currency item.price %>
         <span class="add-icon glyphicon glyphicon-plus"></span>
     </div>
     <div class="col-sm-9 col-md-8 col-lg-10 item-description">
-        <div>Some Menu item</div>
-        <div class="description">Some longer description or something.</div>
+        <div><%= item.name %></div>
+        <div class="description"><%= item.description %></div>
     </div>
 </div>
