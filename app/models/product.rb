@@ -1,8 +1,8 @@
 class Product < ActiveRecord::Base
-	belongs_to :menu_category
+	belongs_to :menu#_category
 
-	delegate :vendor, to: :menu_category
-	delegate :menu,   to: :menu_category
+	delegate :vendor, to: :menu#_category
+	#delegate :menu,   to: :menu#_category
 
 	has_many :product_addons
 

@@ -11,6 +11,13 @@ RailsAdmin.config do |config|
     config.navigation_static_links = {
       'Google' => 'http://www.google.com'
     }
+
+    # config.model Menu do
+    #   edit do
+    #     field :name
+    #     field :vendor, :belongs_to_association
+    #   end
+    # end
   end
 
   # Admin actions
