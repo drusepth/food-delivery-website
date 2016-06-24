@@ -6,10 +6,6 @@ class CreateVendors < ActiveRecord::Migration
       t.time :close_at
       t.time :delivery_start
       t.time :delivery_end
-      t.string :address
-      t.string :city
-      t.string :state
-      t.string :zipcode
       t.decimal :delivery_cost
       t.decimal :delivery_minimum
       t.string :cuisine
