@@ -6,5 +6,10 @@
     <div class="col-sm-9 col-md-8 col-lg-10 item-description">
         <div><%= item.name %></div>
         <div class="description"><%= item.description %></div>
+        <% if item.product_addons.any? %>
+	        <div class="addons">
+	        	Addons available: <%= item.product_addons.map(&:name).to_sentence %>
+	        </div>
+        <% end %>
     </div>
 </div>

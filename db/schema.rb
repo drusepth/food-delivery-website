@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160624213129) do
+ActiveRecord::Schema.define(version: 20160624213459) do
 
   create_table "locations", force: :cascade do |t|
     t.string   "address"
@@ -54,7 +54,10 @@ ActiveRecord::Schema.define(version: 20160624213129) do
     t.decimal  "price_delta"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "product_id"
   end
+
+  add_index "product_addons", ["product_id"], name: "index_product_addons_on_product_id"
 
   create_table "products", force: :cascade do |t|
     t.string   "name"

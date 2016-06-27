@@ -12,12 +12,13 @@ RailsAdmin.config do |config|
       'Google' => 'http://www.google.com'
     }
 
-    # config.model Menu do
-    #   edit do
-    #     field :name
-    #     field :vendor, :belongs_to_association
-    #   end
-    # end
+    config.model ProductAddon do
+      edit do
+        field :name
+        field :product, :belongs_to_association
+        field :price_delta
+      end
+    end
   end
 
   # Admin actions
