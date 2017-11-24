@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+
 	# Routed routes
+
+	# Cart actions
+    get 'cart/add_to'
 
 	# Engines
 	mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
